@@ -38,3 +38,12 @@ window.onload = ()=>{
     }
     loop();
 }
+
+function toggleVideo(){
+    const dom = document.getElementById("video");
+    if (dom.getAttribute("style").indexOf("hidden") < 0) {
+        dom.setAttribute("style", "visibility: hidden;transform: scaleX(-1);");
+    } else {
+        dom.setAttribute("style", "visibility: visible;transform: scaleX(-1);");
+    }
+}
